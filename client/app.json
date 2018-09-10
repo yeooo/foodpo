@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/user/index",
+    "pages/home/home",
+    
+    "pages/logs/index",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "foodpo",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/tab_nol_home.png",
+        "selectedIconPath": "images/tab_pre_home.png"
+      },
+      {
+        "pagePath": "pages/logs/index",
+        "iconPath": "images/tabadd.png",
+        "selectedIconPath": "images/tabadd.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "images/tab_nol_person.png",
+        "selectedIconPath": "images/Artboard1.png"
+      }
+    ]
+  }
+}

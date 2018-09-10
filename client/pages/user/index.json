@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "image-complete": "../components/imgComplete/index",
+    "image-abbreviation": "../components/imgAbbreviation/index"
+  }
+}

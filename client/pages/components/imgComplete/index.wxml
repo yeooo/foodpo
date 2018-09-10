@@ -1,0 +1,40 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<view class="inner">
+  <view class="top">
+    <image src="{{userData.avatarUrl}}"></image>
+    <text class="blod-font">{{userData.nickName}}</text>
+  </view>
+  <view class="swiper-container">
+    <swiper class="img-swiper" interval="2000" duration="1000" bindchange="swiperChange">
+      <swiper-item wx:for="{{foodData.img}}" wx:key="{{foodData.img.index}}">
+        <image src="{{item}}" lazy-load="true" autoplay="false" duration="100" mode="aspectFit" style="width: 750rpx; height: 750rpx; background-color: #eeeeee;"></image>
+      </swiper-item>
+    </swiper>
+    <view class="slider-sign" wx-if="{{foodData.img.length>1}}">
+      {{current}}/{{foodData.img.length}}
+    </view>
+  </view>
+  <view class="menu">
+    <text class="iconfont icon-shoucang"></text>
+    <text class="iconfont icon-xiaoxi"></text>
+    <text class="iconfont icon-fenxiang"></text>
+    <text class="iconfont icon-dingyue"></text>
+  </view>
+  <view class="bottom-content">
+    <view>
+      <text class="blod-font">{{foodData.likes}}次赞</text>
+    </view>
+    <view>
+      <text class="blod-font">{{userData.nickName}}</text>
+      <text>{{foodData.des}}</text>
+    </view>
+    <view wx:for="{{foodData.comment}}" wx:key="{{foodData.comment.index}}">
+      <text class="blod-font">{{item.author}}</text>
+      <text>{{item.detail}}</text>
+    </view>
+    <view>
+      <text class="time">{{foodData.time}}</text>
+    </view>
+  </view>
+</view>
+<slot></slot>

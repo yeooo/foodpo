@@ -1,0 +1,93 @@
+/* pages/home/home.wxss */
+.home-container{
+  width: 100%;
+
+}
+.picture-content{
+  width: 100%;
+  padding: 0rpx;
+  margin: 0rpx;
+}
+.avatar-view{
+  width: 100%;
+  height: 106rpx;
+  padding: 0rpx 22rpx;
+  display: flex;
+  align-items: center;
+}
+.avatar-img{
+  width: 62rpx;
+  height: 62rpx;
+  border-radius: 50%;
+}
+.avatar-name{
+  margin-left: 22rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.picture-img{
+  width: 100%;
+}
+.icont-view{
+  width: 100%;
+  padding: 0px 27rpx;
+  box-sizing: border-box; 
+  margin-bottom: 24rpx;
+}
+
+.icon-shoucang {
+  font-size: 43rpx;
+  margin-right: 34rpx;
+}
+.icon-xiaoxi{
+  font-size: 52rpx;
+  padding-top: 2px;
+  margin-right: 34rpx;
+  display: inline-block;
+}
+.icon-dingyue{
+  float: right;
+  align-self: flex-end;
+  font-size: 52rpx;
+}
+.comment-view{
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+.like-text{
+  font-weight: 600;
+  display: block;
+  margin-bottom: 18rpx;
+}
+.comment-text{
+  
+}
+.comment-text .name {
+  display: inline-block;
+  margin-right: 10rpx;
+  font-weight: 600;
+}
+.comment-all{
+  display: inline-block;
+  margin-top: 10rpx;
+  color: #666666;
+}
+.mycomment{
+  height: 54rpx;
+  margin-top: 27rpx;
+  margin-bottom: 20rpx; 
+  display: flex;
+  align-items: center;
+}
+.small-avatar{
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 50rpx;
+}
+.addcoment-tip{
+  color: #aaaaaa;
+  padding-left: 10rpx;
+}
+.swiperheight{
+  height: 200px;
+}

@@ -1,0 +1,25 @@
+/* @import "/static/css/icon/font-icon.wxss"; */
+@import "/static/css/icon/font-awesome.wxss";
+/* 这里的样式只应用于这个自定义组件 */
+.abbreviation {
+  display: inline-block;
+  position: relative;
+  width: 250rpx;
+  height: 250rpx;
+  border-bottom:1rpx solid #fff;
+  border-right: 1rpx solid #fff;
+  box-sizing: border-box;
+}
+.abbreviation image{
+  width: 100%;
+  height: 100%;
+}
+.pic{
+  position: absolute;
+  color: #fff;
+  right: 10rpx;
+  top: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  font-size: 30rpx;
+}

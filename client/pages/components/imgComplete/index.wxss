@@ -1,0 +1,60 @@
+@import "/static/css/icon/font-icon.wxss";
+/* 这里的样式只应用于这个自定义组件 */
+.inner {
+  color: #1d1d1d;
+}
+.top{
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+.top image{
+  margin-right: 20rpx;
+  vertical-align: middle;
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+}
+.swiper-container{
+  position: relative;
+}
+.img-swiper{
+  width: 750rpx;
+  height: 750rpx;
+}
+.slider-sign{
+  position: absolute;
+  right: 25rpx;
+  top: 25rpx;
+  width: 60rpx;
+  height: 50rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 40%;
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.menu{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;  
+}
+
+.menu text{
+  margin-right: 30rpx;
+}
+.bottom-content{
+  padding: 0 20rpx;
+  padding-bottom: 10rpx;
+  font-size: 24rpx;
+}
+.blod-font{
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.time{
+  font-size: 20rpx;
+  color: #c1c1c1;
+}
