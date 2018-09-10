@@ -1,0 +1,35 @@
+<!-- index.wxml -->
+<view class="comment">
+  <view class="author-container">
+    <view class="author-part">
+      <view class="comment-left">
+        <image src="{{comment.avatarUrl}}"></image>
+      </view>
+      <view class="comment-right">
+        <text class="font-blod author">{{comment.author}}</text>
+        <text class="comment-des">{{comment.des}}</text>
+      </view>
+    </view>
+    <view class="time">
+      <text>{{comment.time}}</text>
+    </view>
+  </view>
+  <view class="comment-container" wx:for="{{comment.comment}}" wx:key="{{item.index}}">
+    <view class="comment-part">
+      <view class="comment-left">
+        <image src="{{item.avatarUrl}}"></image>
+      </view>
+      <view class="comment-right">
+        <text class="font-blod author">{{item.author}}</text>
+        <text class="comment-des">{{item.detail}}</text>
+      </view>
+      <view class="heart">
+        <text class="iconfont icon-shoucang"></text>
+      </view>
+    </view>
+    <view class="time">
+      <text>{{item.time}}</text>
+      <text wx:if="{{item.likes >0}}" class="likes">{{item.likes}}次赞</text>
+    </view>
+  </view>
+</view>

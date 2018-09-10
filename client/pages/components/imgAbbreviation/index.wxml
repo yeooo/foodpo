@@ -1,6 +1,5 @@
 <!-- 这是自定义组件的内部WXML结构 -->
 <view class="abbreviation">
-  <image src="{{abbreviationList.img[0]}}" mode="center"></image>
-  <!-- <text class="iconfont icon-shoucang pic" wx:if="{{abbreviationList.img.length > 1}}"></text> -->
+  <image src="{{abbreviationList.img[0]}}" mode="center" lazy-load="true"></image>
   <i class="fa fa-clone pic" wx:if="{{abbreviationList.img.length > 1}}"></i>
 </view>

@@ -1,4 +1,5 @@
 @import "/static/css/icon/font-icon.wxss";
+@import "/static/css/icon/font-awesome.wxss";
 /* 这里的样式只应用于这个自定义组件 */
 .inner {
   color: #1d1d1d;
@@ -36,25 +37,43 @@
   text-align: center;
   line-height: 50rpx;
 }
-.menu{
-  height: 80rpx;
-  line-height: 80rpx;
-  padding: 0 20rpx;  
-}
 
-.menu text{
-  margin-right: 30rpx;
-}
 .bottom-content{
   padding: 0 20rpx;
   padding-bottom: 10rpx;
   font-size: 24rpx;
 }
 .blod-font{
-  font-weight: bold;
   margin-right: 10rpx;
+  font-weight: bold;
 }
 .time{
   font-size: 20rpx;
   color: #c1c1c1;
+}
+.comment-detail{
+  padding: 10rpx 0;
+  color: #c1c1c1;
+}
+.icont-view{
+  width: 100%;
+  margin: 20rpx 0;
+  padding: 0px 20rpx;
+  box-sizing: border-box; 
+}
+
+.icon-shoucang {
+  margin-right: 34rpx;
+  font-size: 43rpx;
+}
+.icon-xiaoxi{
+  display: inline-block;
+  padding-top: 2px;
+  margin-right: 34rpx;
+  font-size: 52rpx;
+}
+.icon-dingyue{
+  float: right;
+  align-self: flex-end;
+  font-size: 52rpx;
 }

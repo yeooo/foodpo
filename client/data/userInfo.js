@@ -15,6 +15,18 @@ const userInfo =
       "comment": [{
         "author": "lucy",
         "detail": "goooooood~"
+      },{
+        "author": "lucy2",
+        "detail": "goooooood~"
+      },{
+        "author": "lucy3",
+        "detail": "goooooood~"
+      },{
+        "author": "lucy4",
+        "detail": "goooooood~"
+      },{
+        "author": "lucy5",
+        "detail": "goooooood~"
       }]
     }, {
       "img": ["http://ww2.sinaimg.cn/bmiddle/7eca0c01gy1fuzs55jdanj21jk2bchdt.jpg",
@@ -29,14 +41,23 @@ const userInfo =
       "des": "hahahahaha",
       "time": "2018-07-09",
       "likes": '22',
-      "comment": []
+      "comment": [{
+        "author": "lily",
+        "detail": "goooooood~"
+      }]
     }, {
       "img": ["http://ww2.sinaimg.cn/bmiddle/7eca0c01gy1fuzs55jdanj21jk2bchdt.jpg",
         "http://ww3.sinaimg.cn/bmiddle/7eca0c01gy1fuzs4ymgk6j21kw11x1dc.jpg"],
       "des": "hahahahaha",
       "time": "2018-07-09",
       "likes": '22',
-      "comment": []
+      "comment": [{
+        "author": "lucy",
+        "detail": "goooooood~"
+      },{
+        "author": "lucy2",
+        "detail": "goooooood~"
+      }]
     }
   ]
 }

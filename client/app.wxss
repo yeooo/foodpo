@@ -43,3 +43,7 @@
 .icon-xiaoxi:before { content: "\e630"; }
 
 .icon-dingyue:before { content: "\e63f"; }
+
+.font-blod{
+    font-weight: bold;
+}

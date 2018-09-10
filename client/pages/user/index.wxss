@@ -4,9 +4,9 @@ page{
 
 .user-info{
   display: flex;
-  height: 258rpx;
   padding: 0 25rpx;
   padding-top: 25rpx;
+  height: 258rpx;
   border-top: 1rpx solid #ecebeb;
 }
 
@@ -64,10 +64,6 @@ page{
   color: #777;
 }
 
-.swiper {
-  background: #f9f9f9;
-}
-
 .swiper-item{
   height: auto!important;
 }
@@ -76,9 +72,12 @@ page{
 }
 
 image-abbreviation{
-  display: inline-block;
+  float: left;
   width: 250rpx;
   height: 250rpx;
-  background-color: red;
+  background-color: #ecebeb;
   line-height: 0;
+}
+.border-right-none .abbreviation{
+  border-right: 0;
 }

@@ -2,7 +2,7 @@
 @import "/static/css/icon/font-awesome.wxss";
 /* 这里的样式只应用于这个自定义组件 */
 .abbreviation {
-  display: inline-block;
+  display: block;
   position: relative;
   width: 250rpx;
   height: 250rpx;
@@ -16,10 +16,10 @@
 }
 .pic{
   position: absolute;
-  color: #fff;
-  right: 10rpx;
   top: 20rpx;
   width: 40rpx;
   height: 40rpx;
+  color: #fff;
+  right: 10rpx;
   font-size: 30rpx;
 }

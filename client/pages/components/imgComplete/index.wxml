@@ -1,7 +1,7 @@
 <!-- 这是自定义组件的内部WXML结构 -->
 <view class="inner">
   <view class="top">
-    <image src="{{userData.avatarUrl}}"></image>
+    <image src="{{userData.avatarUrl}}" lazy-load="true"></image>
     <text class="blod-font">{{userData.nickName}}</text>
   </view>
   <view class="swiper-container">
@@ -14,11 +14,11 @@
       {{current}}/{{foodData.img.length}}
     </view>
   </view>
-  <view class="menu">
-    <text class="iconfont icon-shoucang"></text>
-    <text class="iconfont icon-xiaoxi"></text>
-    <text class="iconfont icon-fenxiang"></text>
-    <text class="iconfont icon-dingyue"></text>
+  <view class="icont-view">
+    <text class="iconfont icon-shoucang" bindtap="like"></text>
+    <text class="iconfont icon-xiaoxi" bindtap="collect"></text>
+    <text class="iconfont icon-fenxiang" bindtap="onShareAppMessage"></text>
+    <text class="iconfont icon-dingyue" bindtap="book"></text>
   </view>
   <view class="bottom-content">
     <view>
@@ -28,9 +28,26 @@
       <text class="blod-font">{{userData.nickName}}</text>
       <text>{{foodData.des}}</text>
     </view>
-    <view wx:for="{{foodData.comment}}" wx:key="{{foodData.comment.index}}">
-      <text class="blod-font">{{item.author}}</text>
-      <text>{{item.detail}}</text>
+    <!-- comment length less than 2 -->
+    <view wx:if="{{foodData.comment.length < 3}}">
+      <view wx:for="{{foodData.comment}}" wx:key="{{foodData.comment.index}}">
+        <text class="blod-font">{{item.author}}</text>
+        <text>{{item.detail}}</text>
+      </view>
+    </view>
+    <!-- comment length more than 2 -->
+    <view wx:else>
+      <view class="comment-detail" bindtap="gotoCommentPage">
+        <text>共{{(foodData.comment.length - 2)}}条评论</text>
+      </view>
+      <view>
+        <text class="blod-font">{{foodData.comment[foodData.comment.length-1].author}}</text>
+        <text>{{foodData.comment[foodData.comment.length-1].detail}}</text>
+      </view>
+      <view>
+        <text class="blod-font">{{foodData.comment[foodData.comment.length-2].author}}</text>
+        <text>{{foodData.comment[foodData.comment.length-2].detail}}</text>
+      </view>
     </view>
     <view>
       <text class="time">{{foodData.time}}</text>

@@ -2,7 +2,7 @@
 <view>
   <view class="user-info">
     <view class="user-info-left">
-      <image style="width: 156rpx; height: 156rpx; background-color: #eeeeee;border-radius:50%;over-flow:hidden" mode="scaleToFill" src="{{userInfo.avatarUrl}}"></image>
+      <image style="width: 156rpx; height: 156rpx; background-color: #eeeeee;border-radius:50%;over-flow:hidden" mode="scaleToFill" src="{{userInfo.avatarUrl}}" lazy-load="true"></image>
       <text>{{userInfo.nickName}}</text>
     </view>
     <view class="user-info-right">
@@ -32,24 +32,12 @@
     <view class="tab-item fa fa-user-o {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav"></view>
   </view>
   <!-- 内容主体 -->
-  <swiper class="swiper" 
-          current="{{currentTab}}" 
-          duration="200" 
-          bindchange="swiperChange"
-          style="height:{{swiperHeights[currentTab]}}px;">
+  <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style="height:{{swiperHeights[currentTab]}}px;">
     <swiper-item class="swiper-item" id="swiper-item0">
-      <image-abbreviation wx:for="{{userInfo.foodList}}" 
-                          wx:key="item.index" 
-                          abbreviation-list="{{item}}">
-      </image-abbreviation>
+      <image-abbreviation wx:for="{{userInfo.foodList}}" wx:key="item.index" abbreviation-list="{{item}}"></image-abbreviation>
     </swiper-item>
     <swiper-item class="swiper-item" id="swiper-item1">
-       <image-complete wx:for="{{userInfo.foodList}}" 
-                      wx:key="item.index" 
-                      food-data="{{item}}"
-                      user-data="{{userInfo}}">
-      </image-complete>
-
+      <image-complete wx:for="{{userInfo.foodList}}" wx:key="item.index" food-data="{{item}}" user-data="{{userInfo}}"></image-complete>
     </swiper-item>
     <swiper-item class="swiper-item" id="swiper-item2">
       <view>我是tab3</view>

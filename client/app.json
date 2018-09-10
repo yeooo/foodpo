@@ -2,7 +2,7 @@
   "pages": [
     "pages/user/index",
     "pages/home/home",
-    
+    "pages/comment/index",
     "pages/logs/index",
     "pages/index/index"
   ],

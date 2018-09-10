@@ -1,0 +1,64 @@
+@import "/static/css/icon/font-icon.wxss";
+.comment{
+  font-size: 28rpx;
+}
+.author-container {
+  border-bottom: 1px solid #ececec;
+}
+.author-part ,.comment-part{
+  display: flex;
+  padding: 25rpx 40rpx 0 22rpx;
+}
+.author-part .comment-left{
+  width: 108rpx;
+}
+.author-part .comment-right{
+  width: 642rpx;
+}
+.comment-part .comment-left{
+  width: 96rpx;
+}
+.comment-right{
+  height: auto;
+}
+.comment-part .comment-right{
+  width: 644rpx;
+}
+.comment-right .comment-des{
+  word-wrap: break-word;
+  white-space:normal; 
+}
+.author-part image,.comment-part image{
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  /* margin-left: 25rpx; */
+}
+.author-part .author{
+  margin-right: 30rpx;
+}
+.comment-part .author{
+  margin-right: 20rpx;
+}
+
+.time{
+  color: #c1c1c1;
+  font-size: 24rpx;
+  font-weight: lighter;
+}
+
+.author-container .time{
+  margin: 0 0 30rpx 120rpx;
+}
+.comment-container .time{
+  margin: 0 0 30rpx 110rpx;
+}
+.likes{
+  margin: 0 35rpx;
+}
+.heart .icon-shoucang{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24rpx;
+}
