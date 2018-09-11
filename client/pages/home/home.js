@@ -15,10 +15,10 @@ Page({
 
     // 首页数据
     homeData: '',
+    foodList: '',
   },
   onLoad(){
-    this.setData({ homeData: homeData.homeData });
-    console.log(homeData.homeData);
+    this.setData({ homeData: homeData.homeData, foodList: homeData.homeData.foodList });
   },
   changeIndicatorDots: function (e) {
     this.setData({
