@@ -4,8 +4,7 @@
     "pages/comment/index",
     "pages/user/index",
     "pages/index/index",
-    "pages/logs/index",
-    "pages/components/homeImgShow/homeImg"
+    "pages/logs/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
