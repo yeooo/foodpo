@@ -1,5 +1,7 @@
 /**app.wxss**/
 @import "/static/css/icon/font-awesome.wxss";
+
+@import "/static/css/icon/font-icon.wxss";
 .container {
   height: 100%;
   display: flex;
@@ -10,7 +12,7 @@
 }
 
 /**iconfont**/
-@font-face {
+/* @font-face {
     font-family: 'iconfont';
     src: url('iconfont.eot');
     font-weight: normal;
@@ -22,9 +24,9 @@
         url('iconfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
-.iconfont {
+/* .iconfont {
   font-family:"iconfont" !important;
   font-size: 45rpx;
   font-style:normal;
@@ -42,7 +44,7 @@
 
 .icon-xiaoxi:before { content: "\e630"; }
 
-.icon-dingyue:before { content: "\e63f"; }
+.icon-dingyue:before { content: "\e63f"; } */
 
 .font-blod{
     font-weight: bold;
