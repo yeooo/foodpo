@@ -7,7 +7,7 @@ const homeData = {
       "sendNickname": "yeo",
       "img": ["http://ww2.sinaimg.cn/bmiddle/7eca0c01gy1fuzs50j19zj21kw11y7o0.jpg"],
       "des": "11111",
-      "time": "2018-07-09",
+      "sendtime": "2018-07-09",
       "likes": "100",
       "islikes": "0",
       "comment": [{
@@ -23,7 +23,7 @@ const homeData = {
       "img": ["http://ww2.sinaimg.cn/bmiddle/7eca0c01gy1fuzs55jdanj21jk2bchdt.jpg",
         "http://ww3.sinaimg.cn/bmiddle/7eca0c01gy1fuzs4ymgk6j21kw11x1dc.jpg"],
       "des": "11111",
-      "time": "2018-07-09",
+      "sendtime": "2018-07-09",
       "likes": "100",
       "islikes": "0",
       "comment": [{

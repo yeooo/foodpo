@@ -94,12 +94,12 @@
         <text class="comment-text">
           <text class="name">{{homeData.foodList[0].comment[0].author}}</text>{{homeData.foodList[0].comment[0].detail}}
         </text>
-          
+
         <view class="mycomment">
-          <image src="http://img.wxcha.com/file/201802/27/eb7d5d628b.jpg" class="small-avatar"></image>
+          <image src="{{homeData.avatarUrl}}" class="small-avatar"></image>
           <text class="addcoment-tip">添加评论</text>
         </view>
-        <view class="sendTime">2018-09-10 14:50</view>
+        <view class="sendTime">{{homeData.sendtime}}</view>
       </view>
     </view>
   </block>

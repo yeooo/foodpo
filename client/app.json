@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/comment/index",
     "pages/user/index",
     "pages/index/index",
