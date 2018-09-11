@@ -7,6 +7,7 @@
   width: 100%;
   padding: 0rpx;
   margin: 0rpx;
+  margin-bottom: 20rpx;
 }
 .avatar-view{
   width: 100%;
@@ -25,6 +26,9 @@
   font-size: 28rpx;
   font-weight: 600;
 }
+.picture-view{
+  line-height: 0px;
+}
 .picture-img{
   width: 100%;
 }
@@ -33,6 +37,7 @@
   padding: 0px 27rpx;
   box-sizing: border-box; 
   margin-bottom: 24rpx;
+  margin-top: 14rpx;
 }
 
 .icon-shoucang {
@@ -68,7 +73,7 @@
   font-weight: 600;
 }
 .comment-all{
-  display: inline-block;
+  display: block;
   margin-top: 10rpx;
   color: #666666;
 }
@@ -90,4 +95,8 @@
 }
 .swiperheight{
   height: 200px;
+}
+.sendTime{
+  font-size: 24rpx;
+  color: #ddd;
 }
