@@ -14,7 +14,7 @@
       <text>{{comment.time}}</text>
     </view>
   </view>
-  <view class="comment-container" wx:for="{{comment.comment}}" wx:key="{{item.index}}">
+  <view class="comment-container" wx:for="{{comment.comment}}" wx:key="{{index}}">
     <view class="comment-part">
       <view class="comment-left">
         <image src="{{item.avatarUrl}}"></image>
@@ -23,13 +23,25 @@
         <text class="font-blod author">{{item.author}}</text>
         <text class="comment-des">{{item.detail}}</text>
       </view>
-      <view class="heart">
-        <text class="iconfont icon-shoucang"></text>
+      <view class="heart" bindtap="like" data-index="{{index}}">
+        <text class="iconfont icon-shoucang {{item.isSelected ? 'active' :''}}"></text>
       </view>
     </view>
     <view class="time">
       <text>{{item.time}}</text>
       <text wx:if="{{item.likes >0}}" class="likes">{{item.likes}}次赞</text>
+    </view>
+  </view>
+  <view class="comment-submit-container">
+    <!-- <view class="emotions">111</view> -->
+    <view class="submit">
+      <image src="{{comment.avatarUrl}}"></image>
+      <view class="submit-input">
+        <input class="text-input" bindfocus="bindFocus" bindblur="loseBlur" placeholder="添加评论..." bindinput="bindkeyInput" value="{{commentData}}" />
+        <text class="submit-btn"  animation="{{animation}}" bindtap="sendData">
+          发布
+        </text>
+      </view>
     </view>
   </view>
 </view>
