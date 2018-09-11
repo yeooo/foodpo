@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/user/index",
     "pages/home/home",
     "pages/comment/index",
+    "pages/index/index",
+    "pages/user/index",
     "pages/logs/index",
-    "pages/index/index"
+    "pages/components/homeImgShow/homeImg"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,3 +1,5 @@
+const homeData = require('../../data/homeData.js');
+
 Page({
   data: {
     imgUrls: [
@@ -10,6 +12,13 @@ Page({
     interval: 5000,
     duration: 1000,
     indicatorActiveColor: '#4285f4',
+
+    // 首页数据
+    homeData: '',
+  },
+  onLoad(){
+    this.setData({ homeData: homeData.homeData });
+    console.log(homeData.homeData);
   },
   changeIndicatorDots: function (e) {
     this.setData({
