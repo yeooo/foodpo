@@ -14,7 +14,7 @@
     </view>
 
     <view class="chooseimg" bindtap="chooseimg">
-        click
+        click1
     </view>
     <!-- 上传图片测试 -->
     <view class="uploader">
