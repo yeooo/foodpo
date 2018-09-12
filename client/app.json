@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/add/index",
     "pages/home/home",
     "pages/comment/index",
     "pages/user/index",
-    "pages/index/index",
-    "pages/logs/index"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +24,7 @@
         "selectedIconPath": "images/tab_pre_home.png"
       },
       {
-        "pagePath": "pages/logs/index",
+        "pagePath": "pages/add/index",
         "iconPath": "images/tabadd.png",
         "selectedIconPath": "images/tabadd.png"
       },
