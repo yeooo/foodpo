@@ -13,9 +13,7 @@
         </view>
     </view>
 
-    <view class="chooseimg" bindtap="chooseimg">
-        click
-    </view>
+
     <!-- 上传图片测试 -->
     <view class="uploader">
         <view class="uploader-text" bindtap="doUpload">

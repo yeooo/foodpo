@@ -1,80 +1,30 @@
 <!--pages/home/home.wxml-->
 <view class="home-container">
-  <!--一张图-->
-  <view class="picture-content">
-    <view class="avatar-view">
-      <image class="avatar-img" src="{{homeData.foodList[0].sendAvatarUrl}}"></image>
-      <text class="avatar-name">{{homeData.foodList[0].sendNickname}}</text>
-    </view>
-    <view class="picture-view">
-      <image src="{{homeData.foodList[0].img[0]}}" class="picture-img"></image>
-    </view>
-    <view class="icont-view">
-      <text class="iconfont icon-shoucang"></text>
-      <text class="iconfont icon-xiaoxi"></text>
-      <text class="iconfont icon-fenxiang"></text>
-      <text class="iconfont icon-dingyue"></text>
-    </view>
-    <view class="comment-view">
-      <text class="like-text">{{homeData.foodList[0].likes}}次赞</text>
-      <text class="comment-text">
-        <text class="name">{{homeData.foodList[0].comment[0].author}}</text>{{homeData.foodList[0].comment[0].detail}}
-      </text>
-      <text class="comment-all">共{{homeData.foodList[0].comments}}条评论</text>
-      <text class="comment-text">
-        <text class="name">{{homeData.foodList[0].comment[0].author}}</text>{{homeData.foodList[0].comment[0].detail}}
-      </text>  
-      <view class="mycomment">
-        <image src="http://img.wxcha.com/file/201802/27/eb7d5d628b.jpg" class="small-avatar"></image>
-        <text class="addcoment-tip">添加评论</text>
-      </view>
-      <view class="sendTime">2018-09-10 14:50</view>
-    </view>
-  </view>
-  <!--多张图-->
-  <view class="picture-content">
-    <view class="avatar-view">
-      <image class="avatar-img" src="http://img4.imgtn.bdimg.com/it/u=3062426313,3718352357&fm=26&gp=0.jpg"></image>
-      <text class="avatar-name">C.C</text>
-    </view>
-    <view class="picture-view">
-      <swiper indicator-dots="{{indicatorDots}}"
-      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiperheight">
-        <block wx:for="{{imgUrls}}">
-          <swiper-item>
-            <image src="{{item}}" class="picture-img"/>
-          </swiper-item>
-        </block>
-      </swiper>
-    </view>
-    <view class="icont-view">
-      <text class="iconfont icon-shoucang "></text>
-      <text class="iconfont icon-xiaoxi"></text>
-      <text class="iconfont icon-fenxiang"></text>
-      <text class="iconfont icon-dingyue"></text>
-    </view>
-    <view class="comment-view">
-      <text class="like-text">18,720次赞</text>
-      <text class="comment-text">
-        <text class="name">BLACKLY</text>哇。真的好美丽
-      </text>
-      <text class="comment-all">共484条评论</text>
-      <view class="mycomment">
-        <image src="{{homeData.avatarUrl}}" class="small-avatar"></image>
-        <text class="addcoment-tip">添加评论</text>
-      </view>
-    </view>
-  </view>
-  
-  <block wx:for="{{foodList}}" wx:key="item.index">
+  <!-- <block wx:for="{{foodList}}" wx:key="item.index">
     <view class="picture-content">
       <view class="avatar-view">
         <image class="avatar-img" src="{{item.sendAvatarUrl}}"></image>
         <text class="avatar-name">{{item.sendNickname}}</text>
       </view>
-      <view class="picture-view">
-        <image src="{{homeData.foodList[0].img[0]}}" class="picture-img"></image>
+      <view wx:if="{{item.img.length == 1}}">
+        <view class="picture-view">
+          <image src="{{item.img[0]}}" class="picture-img"></image>
+        </view>
       </view>
+      
+      <view wx:if="{{item.img.length > 1}}">
+        <view class="picture-view">
+          <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiperheight">
+            <block wx:for="{{item.img}}">
+              <swiper-item>
+                <image src="{{item}}" class="picture-img"/>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+      
       <view class="icont-view">
         <text class="iconfont icon-shoucang"></text>
         <text class="iconfont icon-xiaoxi"></text>
@@ -84,13 +34,11 @@
 
       <view class="comment-view">
         <text class="like-text">{{item.likes}}次赞</text>
-        <!--描述-->
         <text class="comment-text">
           <text class="name">{{item.sendNickname}}</text>{{item.des}}
         </text>
         <text class="comment-all">共{{item.comments}}条评论</text>
 
-        <!--评论-->
         <text class="comment-text">
           <text class="name">{{homeData.foodList[0].comment[0].author}}</text>{{homeData.foodList[0].comment[0].detail}}
         </text>
@@ -99,9 +47,11 @@
           <image src="{{homeData.avatarUrl}}" class="small-avatar"></image>
           <text class="addcoment-tip">添加评论</text>
         </view>
-        <view class="sendTime">{{homeData.sendtime}}</view>
+        <view class="sendTime">{{item.sendtime}}</view>
       </view>
     </view>
-  </block>
+  </block> -->
   
+  <home-img wx:for="{{foodList}}" wx:key="item.index" food-data="{{item}}" user-data="{{homeData}}"></home-img>
+
 </view>

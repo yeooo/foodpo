@@ -1,2 +1,65 @@
 <!--pages/components/homeImgShow/homeImg.wxml-->
-<text>pages/components/homeImgShow/homeImg.wxml</text>
+<view class="picture-content">
+  <view class="avatar-view">
+    <image class="avatar-img" src="{{foodData.sendAvatarUrl}}"></image>
+    <text class="avatar-name">{{foodData.sendNickname}}</text>
+  </view>
+  <!--picture length ==1 -->
+  <view wx:if="{{foodData.img.length == 1}}">
+    <view class="picture-view" wx:for="{{foodData.img}}">
+      <image src="{{item}}" class="picture-img"></image>
+    </view>
+  </view>
+  
+  <!--picture length >1 -->
+  <view wx:if="{{foodData.img.length > 1}}">
+    <view class="picture-view">
+      <swiper indicator-dots="true" duration="500" class="swiperheight">
+        <block wx:for="{{foodData.img}}">
+          <swiper-item class="imgPosition">
+            <!-- <image src="{{item}}" class="picture-img"/> -->
+            <image src="{{item}}" lazy-load="true" mode="center" style="width: 750rpx; height: 750rpx; background-color: #eeeeee;"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  
+  <view class="icont-view">
+    <text class="iconfont icon-shoucang" wx:if="{{foodData.islikes == 0}}"></text>
+    <text class="iconfont icon-shoucang chooselikes" wx:else></text>
+    <text class="iconfont icon-xiaoxi"></text>
+    <text class="iconfont icon-fenxiang"></text>
+    <text class="iconfont icon-dingyue"></text>
+  </view>
+
+  <view class="comment-view">
+    <text class="like-text" wx:if="{{foodData.likes != 0}}">{{foodData.likes}}次赞</text>
+    <!--描述-->
+    <text class="comment-text">
+      <text class="name">{{foodData.sendNickname}}</text>{{foodData.des}}
+    </text>
+   
+    <!--评论-->
+    <text class="comment-all" wx:if="{{foodData.comments != 0}}">共{{foodData.comments}}条评论</text>
+    <view wx:if="{{foodData.comments < 3}}">
+      <text class="comment-text" wx:for="{{foodData.comment}}">
+        <text class="name">{{item.author}}</text>{{item.detail}}
+      </text>
+    </view>
+    <view wx:elif="{{foodData.comments >= 3}}">
+      <text class="comment-text">
+        <text class="name">{{foodData.comment[foodData.comment.length-2].author}}</text>{{foodData.comment[foodData.comment.length-2].detail}}
+      </text>
+      <text class="comment-text">
+        <text class="name">{{foodData.comment[foodData.comment.length-1].author}}</text>{{foodData.comment[foodData.comment.length-1].detail}}
+      </text>
+    </view>
+
+    <view class="mycomment">
+      <image src="{{userData.avatarUrl}}" class="small-avatar"></image>
+      <text class="addcoment-tip">添加评论</text>
+    </view>
+    <view class="sendTime">{{foodData.sendtime}}</view>
+  </view>
+</view>
