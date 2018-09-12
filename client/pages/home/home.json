@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "Foodpo"
+  "navigationBarTitleText": "Foodpo",
+  "usingComponents": {
+    "home-img": "../components/homeImgShow/homeImg"
+  }
 }

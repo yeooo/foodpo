@@ -3,7 +3,7 @@
   width: 100%;
 
 }
-.picture-content{
+/* .picture-content{
   width: 100%;
   padding: 0rpx;
   margin: 0rpx;
@@ -99,4 +99,4 @@
 .sendTime{
   font-size: 24rpx;
   color: #ddd;
-}
+} */

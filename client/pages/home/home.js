@@ -14,11 +14,14 @@ Page({
     indicatorActiveColor: '#4285f4',
 
     // 首页数据
-    homeData: '',
-    foodList: '',
+    homeData: {},
+    foodList: {},
+    userData: {},
   },
   onLoad(){
-    this.setData({ homeData: homeData.homeData, foodList: homeData.homeData.foodList });
+    this.setData({ 
+      homeData: homeData.homeData, 
+      foodList: homeData.homeData.foodList });
   },
   changeIndicatorDots: function (e) {
     this.setData({
