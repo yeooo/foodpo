@@ -26,8 +26,8 @@
   </view>
   
   <view class="icont-view">
-    <text class="iconfont icon-shoucang" wx:if="{{foodData.islikes == 0}}"></text>
-    <text class="iconfont icon-shoucang chooselikes" wx:else></text>
+    <text class="iconfont icon-shoucang2 likeicont" wx:if="{{foodData.islikes == 0}}"></text>
+    <text class="iconfont icon-xihuan chooselikes" wx:else></text>
     <text class="iconfont icon-xiaoxi"></text>
     <text class="iconfont icon-fenxiang"></text>
     <text class="iconfont icon-dingyue"></text>

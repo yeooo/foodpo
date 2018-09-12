@@ -1,5 +1,6 @@
 /* pages/components/homeImgShow/homeImg.wxss */
 @import "/static/css/icon/font-icon.wxss";
+@import "/static/css/icon/font-icon-new.wxss";
 .picture-content{
   width: 100%;
   padding: 0rpx;
@@ -37,12 +38,14 @@
   margin-top: 14rpx;
 }
 
-.icon-shoucang {
-  font-size: 43rpx;
+.likeicont {
+  font-size: 45rpx;
   margin-right: 34rpx;
 }
 .chooselikes{
-  color: red;
+  font-size: 52rpx;
+  margin-right: 32rpx;
+  color: #e81b0c;
 }
 .icon-xiaoxi{
   font-size: 52rpx;
@@ -105,3 +108,4 @@
   align-items: center;
   align-content: center;
 }
+
