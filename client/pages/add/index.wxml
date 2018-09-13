@@ -4,7 +4,7 @@
         <image src="{{dataInfo.img[0]}}" bindtap="doUpload"></image>
         <textarea placeholder="添加说明..." />
     </view>
-    <add-list-item label-text="标记用户" item-link="/pages/comment/index"></add-list-item>
-    <add-list-item label-text="添加地点" item-link="/pages/comment/index"></add-list-item>
+    <add-list-item label-text="标记用户"></add-list-item>
+    <add-list-item label-text="{{dataInfo.location}}" bindtap="loadInfo"></add-list-item>
     <view><text bindtap="send">po!</text></view>
 </view>

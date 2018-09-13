@@ -12,6 +12,9 @@ Page({
   // 生命周期函数--监听页面加载
   onLoad() {
     this.setData({ userInfo: userInfo.userInfo });
+    wx.setNavigationBarTitle({
+      title: this.data.userInfo.nickName
+    });
     this.initHeight(3);
   },
   bindchange: function (e) {
@@ -32,11 +35,11 @@ Page({
       currentTab: e.detail.current
     });
   },
-  initHeight(num){
+  initHeight(num) {
     let self = this;
     let imgheights = this.data.swiperHeights;
     let query = wx.createSelectorQuery();
-    for(let i = 0;i<num;i++){
+    for (let i = 0; i < num; i++) {
       query.select('#swiper-item' + i).boundingClientRect(function (res) {
         imgheights[i] = res.height;
         self.setData({
