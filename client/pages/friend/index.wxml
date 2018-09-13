@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+    <friend-list label-text="标记用户"></friend-list>
+</view>

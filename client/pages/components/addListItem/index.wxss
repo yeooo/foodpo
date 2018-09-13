@@ -1,0 +1,22 @@
+/* @import "/static/css/icon/font-icon.wxss"; */
+@import "/static/css/icon/font-awesome.wxss";
+/* 这里的样式只应用于这个自定义组件 */
+.add-list-item{
+  display: flex;
+  height: 87rpx;
+  line-height: 87rpx;
+  border-bottom: 1rpx solid #efefef;
+}
+.label-text{
+  padding-left: 28rpx;
+  width: 622rpx;
+  color: #222222;
+  font-size: 28rpx;
+}
+.right-icon{
+  padding-right: 28rpx;
+  width: 72rpx;
+  text-align: right;
+  line-height: 87rpx;
+  color: #d7d7d7;
+}

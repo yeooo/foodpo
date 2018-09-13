@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "新帖子",
+  "usingComponents": {
+    "add-list-item": "../components/addListItem/index"
+  }
+}

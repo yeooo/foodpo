@@ -1,0 +1,9 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<view class="add-list-item">
+  <view class="label-text">
+    <text>{{labelText}}</text>
+  </view>
+  <view class="right-icon" bindtap="gotoLink">
+    <text class="fa fa-angle-right"></text>
+  </view>
+</view>
