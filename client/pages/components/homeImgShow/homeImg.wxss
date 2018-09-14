@@ -6,6 +6,7 @@
   padding: 0rpx;
   margin: 0rpx;
   margin-bottom: 20rpx;
+  box-sizing: border-box;
 }
 .avatar-view{
   width: 100%;
@@ -13,6 +14,7 @@
   padding: 0rpx 22rpx;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 .avatar-img{
   width: 62rpx;
@@ -52,6 +54,7 @@
   padding-top: 2px;
   margin-right: 34rpx;
   display: inline-block;
+  box-sizing: border-box;
 }
 .icon-dingyue{
   float: right;
@@ -61,6 +64,7 @@
 .comment-view{
   padding: 0 30rpx;
   font-size: 28rpx;
+  box-sizing: border-box;
 }
 .like-text{
   font-weight: 600;
@@ -74,6 +78,7 @@
   display: inline-block;
   margin-right: 10rpx;
   font-weight: 600;
+  box-sizing: border-box;
 }
 .comment-all{
   display: block;
@@ -95,6 +100,7 @@
 .addcoment-tip{
   color: #aaaaaa;
   padding-left: 10rpx;
+  box-sizing: border-box;
 }
 .swiperheight{
   height: 750rpx;
